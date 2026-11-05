@@ -1,0 +1,113 @@
+<div dir="rtl">
+
+# Atlassian RTL
+
+**עברית שנראית נכון ב-Jira וב-Confluence.**
+
+[דף ההתקנה](install-rtl.html) · [מדריך מונפש](installation%20guide.html) · [English below](#english)
+
+תוכן מעורב הוא המקום שבו Atlassian נשברת בעברית: משפט שנגמר ב-`(Jira)`, מפתח משימה באמצע פסקה, בלוק קוד מתחת לכותרת. הטקסט נוחת בצד הלא נכון, הפיסוק קופץ לקצה השני, והרשימות נראות שבורות.
+
+הרכיב מתקן את **התצוגה** של התוכן הזה, בעמוד שמולכם, בלחיצה אחת.
+
+| לפני | אחרי |
+|---|---|
+| פסקאות בעברית מיושרות שמאלה, פיסוק בצד הלא נכון | מיושרות ימינה וקריאות |
+| מפתחות משימה ומילים באנגלית מבלבלים את המשפט | כל פסקה מקבלת כיוון משלה |
+| בלוקי קוד יורשים RTL ונשברים | קוד, נתיבים וכתובות נשארים משמאל לימין |
+
+## התקנה בפחות מדקה
+
+בלי תוסף ובלי הרשאות מנהל. ההתקנה היא **סימנייה עם קוד** (Bookmarklet), ולכן היא עובדת גם במחשבים שבהם התקנת תוספים חסומה.
+
+1. **לבדוק שמותרות סימניות עם קוד (פעם אחת).** יוצרים סימנייה שהכתובת שלה היא `javascript:alert('ok')`, פותחים עמוד Confluence ולוחצים עליה. אם קפצה ההודעה `ok`, ממשיכים. אם לא קרה כלום, הארגון חוסם גם את זה, והמסלול הזה לא יעבוד במחשב הזה.
+2. **לגרור את הכפתור הירוק לסרגל הסימניות.** פותחים את [install-rtl.html](install-rtl.html) וגוררים את הכפתור. הסרגל מוסתר? `Ctrl`+`Shift`+`B`. אם הגרירה לא עובדת, באותו דף יש חלופה של העתקה והדבקה.
+3. **לפתוח Jira או Confluence וללחוץ על הסימנייה.** כפתור צף מופיע בפינת העמוד. זהו.
+
+מעדיפים לראות קודם? [המדריך המונפש](installation%20guide.html) עובר על כל זה בכ-40 שניות.
+
+## שימוש
+
+לוחצים על הכפתור הצף, או על `Ctrl`+`Alt`+`R`, כדי לעבור בין שלושה מצבים:
+
+| מצב | הכיתוב על הכפתור | מה הוא עושה |
+|---|---|---|
+| אוטומטי | הצג עברית אוטומטית | מחליט על הכיוון פסקה אחר פסקה. ברירת המחדל. |
+| תמיד | כפה עברית תמיד | כופה ימין-לשמאל בכל אזורי התוכן. |
+| כבוי | כבה את הרכיב | מסיר כל שינוי, בלי להשאיר עקבות בעמוד. |
+
+`Shift` + לחיצה מסתירה את הכפתור הצף. הקיצור `Ctrl`+`Alt`+`R` ממשיך לעבוד.
+
+### בכל פעם שחוזרים
+
+סימנייה לא יכולה לרוץ לבד בעת טעינת עמוד. לכן **אחרי רענון, פתיחת טאב חדש או כניסה מחודשת ל-Atlassian, לוחצים על הסימנייה שוב.** מעבר בין עמודים בתוך Confluence לא דורש לחיצה נוספת.
+
+מה שלא צריך לעשות מחדש הוא את הבחירה עצמה. המצב שבחרתם (כבוי, אוטומטי או תמיד) נשמר ומופעל מיד כשלוחצים על הסימנייה.
+
+### איפה ההגדרה נשמרת
+
+המצב נשמר ב-`localStorage` של הדפדפן, תחת המפתח `crtl:crtlMode`. בפועל:
+
+- הוא נשאר אחרי רענון וסגירת הדפדפן, בלי שרת ובלי חשבון.
+- הוא שייך ל**דפדפן הזה ולאתר הזה**. דפדפן אחר, מחשב אחר או כתובת Atlassian אחרת מתחילים ממצב אוטומטי.
+- ניקוי נתוני האתר מחזיר למצב אוטומטי.
+- שום דבר לא נשלח לשום מקום.
+
+## מה זה עושה ומה לא
+
+שכבת תצוגה בלבד. הרכיב משנה כיווניות ויישור טקסט על המסך. הוא לא קורא את התוכן, לא שולח דבר לשום שרת ולא נוגע במה שנשמר ב-Atlassian. סוגרים את הטאב והוא נעלם.
+
+בלוקי קוד, קוד בתוך שורה, נתיבים וכתובות נשארים תמיד משמאל לימין.
+
+## קבצים
+
+| קובץ | תפקיד |
+|---|---|
+| [install-rtl.html](install-rtl.html) | דף ההתקנה עם הכפתור לגרירה |
+| [installation guide.html](installation%20guide.html) | הדגמה מונפשת של כ-40 שניות |
+
+</div>
+
+---
+
+<div dir="ltr">
+
+<a id="english"></a>
+
+# Atlassian RTL (English)
+
+**Hebrew that looks right in Jira and Confluence.**
+
+Mixed content is where Atlassian breaks down for Hebrew: a sentence that ends with `(Jira)`, a ticket key in the middle of a paragraph, a code block under a heading. Text lands on the wrong side, punctuation jumps to the wrong end, lists look broken. Atlassian RTL fixes the *display* of that content on the page in front of you, with one click.
+
+## Install in under a minute
+
+No extension and no admin rights. It installs as a **bookmarklet** (a bookmark that runs a small script), so it works on computers where installing browser add-ons is blocked.
+
+1. **Check that bookmarklets are allowed (once).** Create a bookmark whose address is `javascript:alert('ok')`, open any Confluence page and click it. If you see `ok`, continue. If nothing happens, your organisation blocks this too and this route won't work on that machine.
+2. **Drag the green button to your bookmarks bar.** Open [install-rtl.html](install-rtl.html) and drag the button. Bookmarks bar hidden? Press `Ctrl`+`Shift`+`B`. The same page has a copy-and-paste alternative if dragging fails.
+3. **Open Jira or Confluence and click the bookmark.** A floating button appears in the corner of the page.
+
+Prefer to watch first? The [animated guide](installation%20guide.html) covers all of this in about 40 seconds.
+
+## Use
+
+Click the floating button, or press `Ctrl`+`Alt`+`R`, to cycle through three modes:
+
+| Mode | What it does |
+|---|---|
+| Auto | Decides direction paragraph by paragraph. The default. |
+| Always | Forces right-to-left on all content areas. |
+| Off | Removes every change and leaves no trace on the page. |
+
+`Shift`+click hides the floating button. The `Ctrl`+`Alt`+`R` shortcut keeps working.
+
+**Every time you come back:** a bookmark cannot run by itself when a page loads, so after a refresh, a new tab or a fresh visit to Atlassian, click the bookmark once more. Moving between pages inside Confluence needs no extra click. Your *mode*, however, is remembered and applied automatically.
+
+**Where the setting lives:** in the browser's `localStorage` under the key `crtl:crtlMode`. It survives refreshes and restarts with no server and no account, but it belongs to this browser and this site only. Another browser, computer or Atlassian address starts from Auto, and clearing site data resets it.
+
+## What it does, and what it doesn't
+
+It is a display layer only. It changes text direction and alignment on your screen. It doesn't read your content, send anything to any server, or touch what Atlassian stores. Code blocks, inline code, paths and URLs always stay left-to-right.
+
+</div>
