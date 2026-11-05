@@ -24,7 +24,7 @@
 2. **לגרור את הכפתור הירוק לסרגל הסימניות (המועדפים).** הסרגל מוסתר? `Ctrl`+`Shift`+`B`. אם הגרירה לא עובדת, באותו דף יש חלופה של העתקה והדבקה.
 3. **לפתוח Jira או Confluence וללחוץ על הסימנייה.** כפתור צף מופיע בפינת העמוד. זהו.
 
-מעדיפים לראות קודם? הסרטון עובר על כל זה בכ-40 שניות (לחיצה על התמונה פותחת את הסרטון בגודל מלא):
+מעדיפים לראות קודם? הסרטון עובר על כל זה בכ-55 שניות (לחיצה על התמונה פותחת את הסרטון בגודל מלא):
 
 [![הדגמת ההתקנה והשימוש](install-guide.gif)](install-guide.mp4)
 
@@ -66,7 +66,7 @@
 | קובץ | תפקיד |
 |---|---|
 | [install-rtl.html](install-rtl.html) | דף ההתקנה עם הכפתור לגרירה |
-| [install-guide.mp4](install-guide.mp4) | הסרטון (כ-40 שניות) |
+| [install-guide.mp4](install-guide.mp4) | הסרטון (כ-55 שניות) |
 | [LICENSE](LICENSE) | רישיון MIT |
 
 ## הבהרה משפטית
@@ -101,7 +101,7 @@ No extension and no admin rights. It installs as a **bookmarklet** (a bookmark t
 2. **Drag the green button to your bookmarks bar.** Bookmarks bar hidden? Press `Ctrl`+`Shift`+`B`. The same page has a copy-and-paste alternative if dragging fails.
 3. **Open Jira or Confluence and click the bookmark.** A floating button appears in the corner of the page.
 
-Prefer to watch first? The video covers all of this in about 40 seconds (click the image to open the full-size video):
+Prefer to watch first? The video covers all of this in about 55 seconds (click the image to open the full-size video):
 
 [![Install and use demo](install-guide.gif)](install-guide.mp4)
 
