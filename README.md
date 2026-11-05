@@ -4,7 +4,7 @@
 
 **עברית שנראית נכון ב-Jira וב-Confluence.**
 
-[דף ההתקנה](install-rtl.html) · [מדריך מונפש](installation%20guide.html) · [English below](#english)
+[דף ההתקנה](install-rtl.html) · [סרטון הדגמה](install-guide.mp4) · [English below](#english)
 
 תוכן מעורב הוא המקום שבו Atlassian נשברת בעברית: משפט שנגמר ב-`(Jira)`, מפתח משימה באמצע פסקה, בלוק קוד מתחת לכותרת. הטקסט נוחת בצד הלא נכון, הפיסוק קופץ לקצה השני, והרשימות נראות שבורות.
 
@@ -24,7 +24,9 @@
 2. **לגרור את הכפתור הירוק לסרגל הסימניות.** פותחים את [install-rtl.html](install-rtl.html) וגוררים את הכפתור. הסרגל מוסתר? `Ctrl`+`Shift`+`B`. אם הגרירה לא עובדת, באותו דף יש חלופה של העתקה והדבקה.
 3. **לפתוח Jira או Confluence וללחוץ על הסימנייה.** כפתור צף מופיע בפינת העמוד. זהו.
 
-מעדיפים לראות קודם? [המדריך המונפש](installation%20guide.html) עובר על כל זה בכ-40 שניות.
+מעדיפים לראות קודם? הסרטון עובר על כל זה בכ-40 שניות (לחיצה על התמונה פותחת את הסרטון בגודל מלא):
+
+[![הדגמת ההתקנה והשימוש](install-guide.gif)](install-guide.mp4)
 
 ## שימוש
 
@@ -64,7 +66,8 @@
 | קובץ | תפקיד |
 |---|---|
 | [install-rtl.html](install-rtl.html) | דף ההתקנה עם הכפתור לגרירה |
-| [installation guide.html](installation%20guide.html) | הדגמה מונפשת של כ-40 שניות |
+| [install-guide.mp4](install-guide.mp4) | הסרטון (כ-40 שניות) |
+| [installation guide.html](installation%20guide.html) | קובץ המקור של ההדגמה המונפשת |
 | [LICENSE](LICENSE) | רישיון MIT |
 
 ## הבהרה משפטית
@@ -99,7 +102,9 @@ No extension and no admin rights. It installs as a **bookmarklet** (a bookmark t
 2. **Drag the green button to your bookmarks bar.** Open [install-rtl.html](install-rtl.html) and drag the button. Bookmarks bar hidden? Press `Ctrl`+`Shift`+`B`. The same page has a copy-and-paste alternative if dragging fails.
 3. **Open Jira or Confluence and click the bookmark.** A floating button appears in the corner of the page.
 
-Prefer to watch first? The [animated guide](installation%20guide.html) covers all of this in about 40 seconds.
+Prefer to watch first? The video covers all of this in about 40 seconds (click the image to open the full-size video):
+
+[![Install and use demo](install-guide.gif)](install-guide.mp4)
 
 ## Use
 

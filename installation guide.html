@@ -26,7 +26,8 @@
   #bmbar .ph { opacity: .7; }
   .pill { display: inline-flex; align-items: center; gap: .8cqw; background: #00875a; color: #fff; font-weight: 600; border-radius: 3cqw; padding: .9cqw 1.8cqw; font-size: 1.7cqw; white-space: nowrap; }
   .pill.small { font-size: 1.3cqw; padding: .35cqw 1.1cqw; }
-  #keys { position: absolute; left: 50%; top: 9cqw; transform: translateX(-50%); background: #172b4d; color: #fff; padding: .6cqw 1.4cqw; border-radius: .8cqw; font-size: 1.5cqw; direction: ltr; opacity: 0; transition: opacity .3s; z-index: 6; }
+  #keys { position: absolute; left: 50%; top: 9cqw; transform: translateX(-50%); background: #172b4d; color: #fff; padding: .6cqw 1.4cqw; border-radius: .8cqw; font-size: 1.5cqw; direction: rtl; opacity: 0; transition: opacity .3s; z-index: 6; }
+  .combo { direction: ltr; unicode-bidi: isolate; display: inline-block; }
   #keys.on { opacity: 1; }
   kbd { background: #fff; color: #172b4d; border-radius: .4cqw; padding: .1cqw .6cqw; margin: 0 .2cqw; font-family: Consolas, monospace; }
 
@@ -64,7 +65,7 @@
   #cursor { position: absolute; width: 2.4cqw; height: 2.4cqw; z-index: 30; left: 0; top: 0; transition: transform 1s cubic-bezier(.45,0,.2,1); pointer-events: none; filter: drop-shadow(0 .2cqw .3cqw rgba(0,0,0,.4)); }
   #cursor.click::after { content: ""; position: absolute; left: -.6cqw; top: -.6cqw; width: 1.6cqw; height: 1.6cqw; border-radius: 50%; border: .25cqw solid #fff; animation: ping .5s; }
   @keyframes ping { from { transform: scale(.4); opacity: 1; } to { transform: scale(1.6); opacity: 0; } }
-  #ghost { position: absolute; z-index: 25; opacity: 0; transition: transform 1s cubic-bezier(.45,0,.2,1), opacity .2s; }
+  #ghost { position: absolute; left: 0; top: 0; z-index: 25; opacity: 0; transition: transform 1s cubic-bezier(.45,0,.2,1), opacity .2s; }
 
   #ctrl { width: 960px; max-width: 100%; display: flex; align-items: center; gap: 12px; color: #fff; direction: ltr; }
   #ctrl button { font: inherit; padding: 6px 14px; border-radius: 4px; border: 0; background: #fff; color: #172b4d; cursor: pointer; font-weight: 600; }
@@ -207,7 +208,7 @@
     if (t < 9) {
       view("vInstall"); $("url").textContent = "install.html";
       caption(t < 7.2 ? "שלב 1: גוררים את הכפתור הירוק לסרגל הסימניות" : "הסימנייה נשמרה בסרגל");
-      if (t >= 4 && t < 6.5) keys("אין סרגל סימניות? <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>");
+      if (t >= 4 && t < 6.5) keys('אין סרגל סימניות? <span class="combo"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd></span>');
       const src = at($("src")), bar = at($("bmbar"), 0.12, 0.5);
       if (t < 5) { moveCursor(src, 900); ensureBm(false); $("bmbar").classList.remove("flash"); }
       else if (t < 7.2) {
@@ -247,12 +248,12 @@
       const i = t < 22.3 ? 0 : 1;
       setMode(i);
       caption(t < 22.3 ? "הכפתור הצף מחליף בין שלושה מצבים: אוטומטי, תמיד, כבוי" : "אפשר גם עם הקיצור Ctrl+Alt+R");
-      if (t >= 23.5) keys("<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd>");
+      if (t >= 23.5) keys('<span class="combo"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd></span>');
     }
     // 26-32: what is saved
     else if (t < 32) {
       setMode(1);
-      moveCursor({ x: stage.clientWidth * 0.78, y: stage.clientHeight * 0.55 }, 900);
+      moveCursor({ x: stage.clientWidth * 0.62, y: stage.clientHeight * 0.4 }, 900);
       caption(t < 29 ? "המצב שבחרתם נשמר ב-localStorage של הדפדפן" : "לכן הוא נשאר גם אחרי רענון, בלי שרת ובלי חשבון");
     }
     // 32-36.5: refresh, click bookmark, saved mode comes back
@@ -266,7 +267,7 @@
     // 36.5-40: limits
     else {
       setMode(1);
-      moveCursor({ x: stage.clientWidth * 0.78, y: stage.clientHeight * 0.55 }, 900);
+      moveCursor({ x: stage.clientWidth * 0.62, y: stage.clientHeight * 0.4 }, 900);
       caption(t < 38.2 ? "המצב נשמר רק בדפדפן הזה, ובאתר הזה" : "בדפדפן או במחשב אחר, או אחרי ניקוי נתוני האתר, חוזרים למצב אוטומטי");
     }
   }
