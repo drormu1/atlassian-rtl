@@ -67,7 +67,6 @@
 |---|---|
 | [install-rtl.html](install-rtl.html) | דף ההתקנה עם הכפתור לגרירה |
 | [install-guide.mp4](install-guide.mp4) | הסרטון (כ-40 שניות) |
-| [installation guide.html](installation%20guide.html) | קובץ המקור של ההדגמה המונפשת |
 | [LICENSE](LICENSE) | רישיון MIT |
 
 ## הבהרה משפטית
