@@ -65,6 +65,17 @@
 |---|---|
 | [install-rtl.html](install-rtl.html) | דף ההתקנה עם הכפתור לגרירה |
 | [installation guide.html](installation%20guide.html) | הדגמה מונפשת של כ-40 שניות |
+| [LICENSE](LICENSE) | רישיון MIT |
+
+## הבהרה משפטית
+
+**זהו פרויקט עצמאי של קוד פתוח. Atlassian לא יצרה אותו, לא אישרה אותו, לא תומכת בו ואינה קשורה אליו בשום צורה.**
+
+Atlassian, Jira ו-Confluence הם סימנים מסחריים של Atlassian Pty Ltd, והשימוש בשמות בא רק לציין עם אילו מוצרים הרכיב עובד. הרכיב משנה את התצוגה בדפדפן שלכם בלבד, ובעיות בו אין לדווח לתמיכה של Atlassian. השימוש באחריותכם, ובארגון שלכם כדאי לוודא שהמדיניות מתירה סימניות עם קוד.
+
+## רישיון
+
+[MIT](LICENSE). מותר להשתמש, להעתיק, לשנות ולהפיץ, גם בארגון וגם באופן מסחרי, בתנאי ששומרים את הודעת הזכויות והרישיון. התוכנה ניתנת "כמות שהיא", ללא אחריות מכל סוג.
 
 </div>
 
@@ -109,5 +120,15 @@ Click the floating button, or press `Ctrl`+`Alt`+`R`, to cycle through three mod
 ## What it does, and what it doesn't
 
 It is a display layer only. It changes text direction and alignment on your screen. It doesn't read your content, send anything to any server, or touch what Atlassian stores. Code blocks, inline code, paths and URLs always stay left-to-right.
+
+## Disclaimer
+
+**This is an independent, open-source project. It was not created, endorsed, sponsored or supported by Atlassian, and it is not affiliated with Atlassian in any way.**
+
+Atlassian, Jira and Confluence are trademarks of Atlassian Pty Ltd; the names are used only to say which products this works with. It changes how pages look in your own browser only. Do not report problems with it to Atlassian support. Use it at your own risk, and check that your organisation's policy allows bookmarklets.
+
+## License
+
+[MIT](LICENSE). You may use, copy, modify and distribute it, including inside a company and commercially, as long as you keep the copyright and licence notice. The software is provided "as is", without warranty of any kind.
 
 </div>
