@@ -20,10 +20,9 @@
 
 בלי תוסף ובלי הרשאות מנהל. ההתקנה היא **סימנייה עם קוד** (Bookmarklet), ולכן היא עובדת גם במחשבים שבהם התקנת תוספים חסומה.
 
-1. **לבדוק שמותרות סימניות עם קוד (פעם אחת).** יוצרים סימנייה שהכתובת שלה היא `javascript:alert('ok')`, פותחים עמוד Confluence ולוחצים עליה. אם קפצה ההודעה `ok`, ממשיכים. אם לא קרה כלום, הארגון חוסם גם את זה, והמסלול הזה לא יעבוד במחשב הזה.
-2. **להוריד את דף ההתקנה ולפתוח אותו בכרום.** נכנסים ל-[install-rtl.html](install-rtl.html) ב-GitHub, לוחצים על כפתור ההורדה (**Download raw file**) בפינה הימנית העליונה של הקובץ, ואז פותחים את הקובץ מתיקיית ההורדות (Downloads) בכרום. חשוב להוריד, כי בתוך GitHub הדף מוצג כקוד ולא ניתן לגרור ממנו את הכפתור.
-3. **לגרור את הכפתור הירוק לסרגל הסימניות (המועדפים).** הסרגל מוסתר? `Ctrl`+`Shift`+`B`. אם הגרירה לא עובדת, באותו דף יש חלופה של העתקה והדבקה.
-4. **לפתוח Jira או Confluence וללחוץ על הסימנייה.** כפתור צף מופיע בפינת העמוד. זהו.
+1. **להוריד את דף ההתקנה ולפתוח אותו בכרום.** נכנסים ל-[install-rtl.html](install-rtl.html) ב-GitHub, לוחצים על כפתור ההורדה (**Download raw file**) בפינה הימנית העליונה של הקובץ, ואז פותחים את הקובץ מתיקיית ההורדות (Downloads) בכרום. חשוב להוריד, כי בתוך GitHub הדף מוצג כקוד ולא ניתן לגרור ממנו את הכפתור.
+2. **לגרור את הכפתור הירוק לסרגל הסימניות (המועדפים).** הסרגל מוסתר? `Ctrl`+`Shift`+`B`. אם הגרירה לא עובדת, באותו דף יש חלופה של העתקה והדבקה.
+3. **לפתוח Jira או Confluence וללחוץ על הסימנייה.** כפתור צף מופיע בפינת העמוד. זהו.
 
 מעדיפים לראות קודם? הסרטון עובר על כל זה בכ-40 שניות (לחיצה על התמונה פותחת את הסרטון בגודל מלא):
 
@@ -98,10 +97,9 @@ Mixed content is where Atlassian breaks down for Hebrew: a sentence that ends wi
 
 No extension and no admin rights. It installs as a **bookmarklet** (a bookmark that runs a small script), so it works on computers where installing browser add-ons is blocked.
 
-1. **Check that bookmarklets are allowed (once).** Create a bookmark whose address is `javascript:alert('ok')`, open any Confluence page and click it. If you see `ok`, continue. If nothing happens, your organisation blocks this too and this route won't work on that machine.
-2. **Download the install page and open it in Chrome.** Go to [install-rtl.html](install-rtl.html) on GitHub, click **Download raw file** (top-right of the file view), then open the file from your Downloads folder in Chrome. You need to download it, because GitHub shows the page as code and you can't drag the button from there.
-3. **Drag the green button to your bookmarks bar.** Bookmarks bar hidden? Press `Ctrl`+`Shift`+`B`. The same page has a copy-and-paste alternative if dragging fails.
-4. **Open Jira or Confluence and click the bookmark.** A floating button appears in the corner of the page.
+1. **Download the install page and open it in Chrome.** Go to [install-rtl.html](install-rtl.html) on GitHub, click **Download raw file** (top-right of the file view), then open the file from your Downloads folder in Chrome. You need to download it, because GitHub shows the page as code and you can't drag the button from there.
+2. **Drag the green button to your bookmarks bar.** Bookmarks bar hidden? Press `Ctrl`+`Shift`+`B`. The same page has a copy-and-paste alternative if dragging fails.
+3. **Open Jira or Confluence and click the bookmark.** A floating button appears in the corner of the page.
 
 Prefer to watch first? The video covers all of this in about 40 seconds (click the image to open the full-size video):
 
